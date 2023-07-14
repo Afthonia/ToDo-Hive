@@ -38,7 +38,7 @@ class Home extends StatelessWidget {
               children: [
                 Obx(
                   () => Checkbox(
-                    value: filterController.isFiltered.value,
+                    value: filterController.uncheckedTasks.value,
                     onChanged: (_) {
                       filterController.toggle();
                     },
@@ -89,7 +89,7 @@ class Home extends StatelessWidget {
                 physics: const AlwaysScrollableScrollPhysics(),
                 scrollDirection: Axis.vertical,
                 shrinkWrap: true,
-                children: filterController.isFiltered.value
+                children: filterController.uncheckedTasks.value
                     ? taskController.tasks
                         .where((todo) => !todo.isCompleted)
                         .where((todo) => todo.text.toLowerCase().contains(

@@ -34,7 +34,7 @@ class ConfirmingDeleting extends StatelessWidget {
                     Get.back(closeOverlays: true);
                     Get.showSnackbar(GetSnackBar(
                       title: 'Deleted!',
-                      message: 'Your task is succesfully deleted!',
+                      message: 'Your task is successfully deleted!',
                       backgroundColor: Constants.mainColor.withOpacity(0.5),
                       duration: const Duration(seconds: 3),
                     ));

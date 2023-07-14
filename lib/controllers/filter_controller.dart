@@ -1,11 +1,11 @@
 import 'package:get/state_manager.dart';
 
 class FilterController extends GetxController {
-  final isFiltered = false.obs;
+  final uncheckedTasks = false.obs;
 
   void toggle() {
-    isFiltered.value = !isFiltered.value;
-    isFiltered.refresh();
-    print(isFiltered.value);
+    uncheckedTasks.value = !uncheckedTasks.value;
+    uncheckedTasks.refresh();
+    print(uncheckedTasks.value);
   }
 }
