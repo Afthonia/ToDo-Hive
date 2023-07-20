@@ -1,12 +1,9 @@
-<<<<<<< HEAD
 plugins {
     id "com.android.application"
     id "kotlin-android"
     id "dev.flutter.flutter-gradle-plugin"
 }
 
-=======
->>>>>>> 229d494182991277c06b0887591032f0e2ccca12
 def localProperties = new Properties()
 def localPropertiesFile = rootProject.file('local.properties')
 if (localPropertiesFile.exists()) {
@@ -15,14 +12,6 @@ if (localPropertiesFile.exists()) {
     }
 }
 
-<<<<<<< HEAD
-=======
-def flutterRoot = localProperties.getProperty('flutter.sdk')
-if (flutterRoot == null) {
-    throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
-}
-
->>>>>>> 229d494182991277c06b0887591032f0e2ccca12
 def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
 if (flutterVersionCode == null) {
     flutterVersionCode = '1'
@@ -33,13 +22,6 @@ if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
 
-<<<<<<< HEAD
-=======
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
-
->>>>>>> 229d494182991277c06b0887591032f0e2ccca12
 android {
     namespace "com.example.todo"
     compileSdkVersion flutter.compileSdkVersion
@@ -82,10 +64,4 @@ flutter {
     source '../..'
 }
 
-<<<<<<< HEAD
 dependencies {}
-=======
-dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-}
->>>>>>> 229d494182991277c06b0887591032f0e2ccca12
