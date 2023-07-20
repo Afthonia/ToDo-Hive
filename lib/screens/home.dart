@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:todo/controllers/filter_controller.dart';
-<<<<<<< HEAD
 import 'package:todo/models/todo_model.dart';
-=======
->>>>>>> 229d494182991277c06b0887591032f0e2ccca12
 import 'package:todo/widgets/add_task.dart';
 import 'package:todo/constants.dart';
 import 'package:todo/controllers/task_controller.dart';
@@ -95,7 +92,6 @@ class Home extends StatelessWidget {
                 shrinkWrap: true,
                 children: filterController.uncheckedTasks.value
                     ? taskController.tasks
-<<<<<<< HEAD
                         .where((todo) => !todo!.isCompleted)
                         .where((todo) => todo!.text.toLowerCase().contains(
                             taskController.searchText.value.toLowerCase()))
@@ -110,22 +106,7 @@ class Home extends StatelessWidget {
                               todo: todo ?? TodoModel(id: 0, text: "No Task", isCompleted: false),
                             ))
                         .toList()) : [],
-=======
-                        .where((todo) => !todo.isCompleted)
-                        .where((todo) => todo.text.toLowerCase().contains(
-                            taskController.searchText.value.toLowerCase()))
-                        .map((todo) => TaskCard(
-                              todo: todo,
-                            ))
-                        .toList()
-                    : taskController.tasks
-                        .where((todo) => todo.text.toLowerCase().contains(
-                            taskController.searchText.value.toLowerCase()))
-                        .map((todo) => TaskCard(
-                              todo: todo,
-                            ))
-                        .toList(),
->>>>>>> 229d494182991277c06b0887591032f0e2ccca12
+
               ),
             ),
           ),
@@ -133,10 +114,6 @@ class Home extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-<<<<<<< HEAD
-=======
-          //showDialog(context: context, builder: (context) => const AddTask());
->>>>>>> 229d494182991277c06b0887591032f0e2ccca12
           Get.dialog(const AddTask());
         },
         backgroundColor: Constants.mainColor,
