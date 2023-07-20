@@ -65,5 +65,6 @@ class TaskController extends GetxController {
 
     todo?.isCompleted = !todo.isCompleted;
     todo?.save();
+    tasks.refresh();
   }
 }
