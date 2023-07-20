@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import 'package:get/get.dart';
 import 'package:get/state_manager.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -6,11 +7,19 @@ import 'package:todo/models/todo_model.dart';
 
 class TaskController extends GetxController {
   final tasks = <TodoModel?>[].obs;
+=======
+import 'package:get/state_manager.dart';
+import 'package:todo/models/todo_model.dart';
+
+class TaskController extends GetxController {
+  final tasks = <TodoModel>[].obs;
+>>>>>>> 229d494182991277c06b0887591032f0e2ccca12
 
   final searchText = "".obs;
 
   int idCounter = 1;
 
+<<<<<<< HEAD
   Box<TodoModel> todoBox = Hive.box<TodoModel>('todos');
 
   @override
@@ -65,6 +74,25 @@ class TaskController extends GetxController {
 
     todo?.isCompleted = !todo.isCompleted;
     todo?.save();
+=======
+  void addTask(String task) {
+    tasks.add(
+      TodoModel(
+        id: idCounter++,
+        text: task,
+        isCompleted: false,
+      ),
+    );
+  }
+
+  void deleteTask(int id) {
+    tasks.removeWhere((todo) => todo.id == id);
+  }
+
+  void toggle(int id) {
+    final todo = tasks.firstWhere((todo) => todo.id == id);
+    todo.isCompleted = !todo.isCompleted;
+>>>>>>> 229d494182991277c06b0887591032f0e2ccca12
     tasks.refresh();
   }
 }

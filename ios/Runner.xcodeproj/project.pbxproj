@@ -168,8 +168,12 @@
 		97C146E61CF9000F007C117D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+<<<<<<< HEAD
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
+=======
+				LastUpgradeCheck = 1300;
+>>>>>>> 229d494182991277c06b0887591032f0e2ccca12
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					331C8080294A63A400263BE5 = {

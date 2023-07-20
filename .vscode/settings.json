@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "editor.quickSuggestions": {
         "other": true,
         "strings": true,
@@ -9,4 +10,9 @@
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "editor.tabSize": 2,
+=======
+    "cSpell.words": [
+        "Getx"
+    ]
+>>>>>>> 229d494182991277c06b0887591032f0e2ccca12
 }

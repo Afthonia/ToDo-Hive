@@ -4,8 +4,13 @@ import 'package:todo/constants.dart';
 import 'package:todo/controllers/task_controller.dart';
 import 'package:todo/models/todo_model.dart';
 
+<<<<<<< HEAD
 class ConfirmDeleting extends StatelessWidget {
   const ConfirmDeleting({super.key, required this.todo});
+=======
+class ConfirmingDeleting extends StatelessWidget {
+  const ConfirmingDeleting({super.key, required this.todo});
+>>>>>>> 229d494182991277c06b0887591032f0e2ccca12
 
   final TodoModel todo;
 

@@ -8,7 +8,11 @@ class AddTask extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     final taskController = Get.find<TaskController>();
+=======
+    final newTaskController = Get.find<TaskController>();
+>>>>>>> 229d494182991277c06b0887591032f0e2ccca12
     var textController = TextEditingController();
 
     return AlertDialog(
@@ -53,7 +57,11 @@ class AddTask extends StatelessWidget {
                 alignment: Alignment.centerRight,
                 child: IconButton(
                   onPressed: () {
+<<<<<<< HEAD
                     taskController.addTask(textController.text);
+=======
+                    newTaskController.addTask(textController.text);
+>>>>>>> 229d494182991277c06b0887591032f0e2ccca12
                     Get.back();
                   },
                   icon: Icon(

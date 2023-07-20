@@ -1,6 +1,10 @@
 # todo
 
+<<<<<<< HEAD
 "A new Flutter project."
+=======
+A new Flutter project.
+>>>>>>> 229d494182991277c06b0887591032f0e2ccca12
 
 ## Getting Started
 

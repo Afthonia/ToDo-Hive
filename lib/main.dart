@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+<<<<<<< HEAD
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:todo/models/todo_model.dart';
 import 'package:todo/screens/home.dart';
@@ -11,6 +12,11 @@ void main() async {
   await Hive.initFlutter(directory.path);
   Hive.registerAdapter(TodoModelAdapter());
   await Hive.openBox<TodoModel>('todos');
+=======
+import 'package:todo/screens/home.dart';
+
+void main() {
+>>>>>>> 229d494182991277c06b0887591032f0e2ccca12
   runApp(const GetMaterialApp(
     home: Home(),
   ));

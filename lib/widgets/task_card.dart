@@ -3,7 +3,11 @@ import 'package:get/get.dart';
 import 'package:todo/controllers/task_controller.dart';
 import 'package:todo/models/todo_model.dart';
 import 'package:todo/widgets/confirm_deleting.dart';
+<<<<<<< HEAD
 import 'package:todo/widgets/edit_task.dart';
+=======
+
+>>>>>>> 229d494182991277c06b0887591032f0e2ccca12
 import '../constants.dart';
 
 class TaskCard extends StatelessWidget {
@@ -55,6 +59,7 @@ class TaskCard extends StatelessWidget {
                   alignment: Alignment.centerRight,
                   child: IconButton(
                     onPressed: () {
+<<<<<<< HEAD
                       Get.dialog(EditTask(todo: todo));
                     },
                     icon: Icon(
@@ -68,6 +73,9 @@ class TaskCard extends StatelessWidget {
                   child: IconButton(
                     onPressed: () {
                       Get.dialog(ConfirmDeleting(todo: todo));
+=======
+                      Get.dialog(ConfirmingDeleting(todo: todo));
+>>>>>>> 229d494182991277c06b0887591032f0e2ccca12
                     },
                     icon: Icon(
                       Icons.delete,
@@ -82,4 +90,8 @@ class TaskCard extends StatelessWidget {
       ),
     );
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 229d494182991277c06b0887591032f0e2ccca12

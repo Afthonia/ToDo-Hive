@@ -1,5 +1,9 @@
 name: todo
+<<<<<<< HEAD
 description: "A new Flutter project."
+=======
+description: A new Flutter project.
+>>>>>>> 229d494182991277c06b0887591032f0e2ccca12
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -19,7 +23,11 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
+<<<<<<< HEAD
   sdk: '>=3.1.0-315.0.dev <4.0.0'
+=======
+  sdk: '>=3.0.5 <4.0.0'
+>>>>>>> 229d494182991277c06b0887591032f0e2ccca12
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -35,10 +43,14 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+<<<<<<< HEAD
   hive: ^2.2.3
   hive_flutter: ^1.1.0
   get: ^4.6.5
   path_provider: ^2.0.15
+=======
+  get: ^4.6.5
+>>>>>>> 229d494182991277c06b0887591032f0e2ccca12
 
 dev_dependencies:
   flutter_test:
@@ -50,8 +62,11 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+<<<<<<< HEAD
   build_runner: ^2.4.6
   hive_generator: ^2.0.0
+=======
+>>>>>>> 229d494182991277c06b0887591032f0e2ccca12
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

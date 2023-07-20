@@ -5,7 +5,11 @@
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
+<<<<<<< HEAD
     "description": ""A new Flutter project."",
+=======
+    "description": "A new Flutter project.",
+>>>>>>> 229d494182991277c06b0887591032f0e2ccca12
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
